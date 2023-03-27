@@ -24,14 +24,15 @@ const Home = () => {
         
         <div>
             <div>
+            <div className='lgnhdr'>
             <Navbar bg='light' expand="lg">
                     <Container>
-                        <Navbar.Brand href="#home">Kailen's Webpage</Navbar.Brand>
+                        <Navbar.Brand href="/home">Kailen's Webpage</Navbar.Brand>
                         <Navbar.Toggle aria-controls='basic-navbar-nav' />
                         <Navbar.Collapse id='basic-navbar-nav'>
                             <Nav className='me-auto'>
                                 <Nav.Link href='/home'>Home</Nav.Link>
-                                <Nav.Link href='/login'>Login</Nav.Link>
+                                <Nav.Link href='/Login'>Login</Nav.Link>
                                 <Nav.Link href='profile'>Profile</Nav.Link>
                                 <NavDropdown title="Settings" id="basic-nav-dropdown">
                                 </NavDropdown>
@@ -43,6 +44,8 @@ const Home = () => {
             <h1 className='header'>Welcome Home </h1>
             <Button variant='outline-secondary' type='submit' onClick={handleLogin}>Login</Button>{" "}
             <Button variant='outline-secondary' type='submit' onClick={handleRegister}>Register</Button>
+            </div>
+            
         </div>
     );
 }
@@ -55,7 +58,7 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        navigate('/UserProfile')
+        navigate('/profile')
     };
     return(
             <div className='lgnhdr'>
@@ -75,7 +78,7 @@ const Login = () => {
                     </Container>
                 </Navbar>
                 <div className='lgnDiv'>
-            <Card>
+            <Card className='loginbackground'>
             <h1>Login</h1>
             <br></br>
             <p>Enter Username</p>
@@ -95,10 +98,10 @@ const Login = () => {
 const UserProfile = () => {
     return(
         <div>
-            <div>
+            <div className='lgnhdr'>
             <Navbar bg='light' expand="lg">
                     <Container>
-                        <Navbar.Brand href="#home">Kailen's Webpage</Navbar.Brand>
+                        <Navbar.Brand href="/home">Kailen's Webpage</Navbar.Brand>
                         <Navbar.Toggle aria-controls='basic-navbar-nav' />
                         <Navbar.Collapse id='basic-navbar-nav'>
                             <Nav className='me-auto'>
