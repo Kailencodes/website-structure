@@ -1,0 +1,41 @@
+body{
+  
+}
+.header{
+    text-align: center;
+    font-family: 'Myriad Pro Regular';
+}
+.username1{
+    margin: auto;
+    width: 100px; height: 20px;
+    font-family: 'Myriad Pro Regular';
+}
+.lgnDiv{
+    padding-top: 100px;
+    margin: auto;
+    width: 500px; height: 20px;
+    font-family: 'Myriad Pro Regular';
+}
+.lgnHdr{
+  
+}
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+.img-magnifier-glass {
+  position:absolute;
+  border: 3px solid #000;
+  border-radius: 20%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 120px;
+  height: 120px;
+}
+
+
+
+
+
+
